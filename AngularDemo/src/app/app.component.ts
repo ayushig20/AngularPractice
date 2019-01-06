@@ -14,13 +14,16 @@ import { Constants } from './constants/constants';
 
 export class AppComponent implements OnInit{
 productData = undefined;
+productList = [];
+title = 'YourCart';
 //_url = '';
 
 ngOnInit():any{
 
 //Load all products initially
 // var productList = this.apiServices.GetData(this.constants.PRODUCT_SERVICES.GET_PRODUCTS_LIST);
-// console.log(productList);
+this.productList = [{'id':1,'name':'Product1','type':'Type1'},{'id':1,'name':'Product2','type':'Type2'},{'id':1,'name':'Product3','type':'Type3'}];
+ console.log(this.productList);
 }
 
 constructor(private apiServices: ApiServices,private constants: Constants) {  
@@ -32,6 +35,13 @@ viewProductDetails(productType: string): any{
   var _url = this.constants.PRODUCT_SERVICES.GET_PRODUCT_DETAILS + productType;
   console.log(_url);
   this.productData = this.apiServices.GetData(_url);
+  console.log(this.productData);
+}
+
+addProduct(addForm: any): any{
+  console.log('in viewProductDetails');
+  var postData = '';
+  this.productData = this.apiServices.PostData(this.constants.PRODUCT_SERVICES.ADD_PRODUCT,postData);
   console.log(this.productData);
 }
 }

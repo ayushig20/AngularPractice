@@ -1,24 +1,37 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<div style="text-align:center" layout="row">
+  <h1>Welcome to {{ title }}!</h1>
+  <h2>{{productList}}</h2>
 </div>
-<!-- <table>
-  <thead>
-    <tr>
-      <th>Product List</th>
-    </tr>
-  </thead>
-  <tbody> -->
-    
-    <button md-button (click)="viewProductDetails('Type1')">Click here</button>
-    <!-- <tr *ngFor="let item of itemList">
-      <div>{{item}}</div>
-    </tr>
-  </tbody>
-</table> -->
-<h2>{{productData}}</h2>
+<button md-button (click)="viewProductDetails('Type1')">Click here</button>
+
+<div layout="row">
+  <mat-card class="cardView">
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody class="tableView" style="padding-top: 50px;padding-left: 10px">
+        <tr *ngFor="let item of productList">
+          <td>
+            <div>{{item.id}}</div>
+          </td>
+          <td>
+            <div>{{item.name}}</div>
+          </td>
+          <td>
+            <div>{{item.type}}</div>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+  </mat-card>
+</div>
 <!-- <h2>Here are some links to help you start: </h2> -->
 
 <!-- <ul>

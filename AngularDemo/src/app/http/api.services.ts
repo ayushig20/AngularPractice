@@ -12,7 +12,7 @@ export class ApiServices {
     }
 
     GetData(url: string): any {
-        return this.http.get(this.protocol +this.host + this.port + url, { headers: this.head }).subscribe(
+        return this.http.get(this.protocol + this.host + this.port + url, { headers: this.head }).subscribe(
             getProductResponse => {
                 console.log("Received data from API");
                 console.log(getProductResponse);
@@ -23,9 +23,9 @@ export class ApiServices {
         );
     }
 
-    PostData(): any {
+    PostData(url: string, data: any): any {
 
-        return this.http.post('http://localhost:9090/service/productservice/getproducts/Type1', { headers: this.head }).subscribe(
+        return this.http.post(url, data, { headers: this.head }).subscribe(
             getProductResponse => {
                 console.log("Post call");
             },

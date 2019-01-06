@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'; 
 import { AppComponent } from './app.component';
 import { ApiServices } from './http/api.services';
-import { Constants } from './constants/constants'
+import { Constants } from './constants/constants';
+import { MatCardModule,MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,9 @@ import { Constants } from './constants/constants'
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [ApiServices,Constants],
   bootstrap: [AppComponent]
