@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: product-client
+
+server:
+  port: 9092
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:9091/eureka/
+  instance:
+    hostname: localhost
+
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 60000
