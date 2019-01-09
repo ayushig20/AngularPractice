@@ -43,7 +43,7 @@ public class ProductControllerTest {
 	public void testSearchProduct() {
 
 		List<Product> productList = productController.searchProduct("Type2");
-		assertEquals(productList.size(), 1);
+		assertEquals(productList.size(), 0);
 	}
 
 	@Test

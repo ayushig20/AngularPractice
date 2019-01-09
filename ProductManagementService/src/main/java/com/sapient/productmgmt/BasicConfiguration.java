@@ -26,11 +26,23 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
+      /*  http
                 .authorizeRequests()
                 .anyRequest()
-                .authenticated()
+                .fullyAuthenticated()
+                .and()
+                .httpBasic();*/
+
+
+       http
+                .authorizeRequests()
+                .antMatchers("/productservice/getproducts/**")
+                .hasRole("USER")
+                .antMatchers("/productservice/deleteproducts/**","/productservice/addproduct/**")
+                .hasRole("ADMIN")
                 .and()
                 .httpBasic();
+
+        http.csrf().disable();
     }
 }
