@@ -1,22 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ApiServices } from './http/api.services';
 import { Constants } from './constants/constants';
-import { MatCardModule,MatToolbarModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule, MatToolbarModule, MatDialogModule, MatButtonModule } from '@angular/material';
+import { AddProductDialogComponent } from './add-product-dialog/add-product-dialog.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddProductDialogComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
-  providers: [ApiServices,Constants],
-  bootstrap: [AppComponent]
+  providers: [ApiServices, Constants],
+  bootstrap: [AppComponent],
+  entryComponents: [AddProductDialogComponent]
 })
 export class AppModule { }

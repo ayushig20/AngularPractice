@@ -1,0 +1,16 @@
+<div>
+  <h2 md-dialog-title>Add Product</h2>
+  <hr>
+  <mat-dialog-content>
+   <label>Product Name</label>
+   <input type="text" placeholder="Enter name" [(ngModel)]="pName" />
+   <label>Product Type</label>
+   <input type="text" placeholder="Enter type" [(ngModel)]="pType" />
+  <strong>{{data}}</strong>
+  </mat-dialog-content>
+  <hr>
+  <mat-dialog-actions>
+    <button md-raised-button (click)="addProduct()">CONFIRM</button>&nbsp;
+    <button md-raised-button (click)="onCloseCancel()">CANCEL</button>
+  </mat-dialog-actions>
+</div>

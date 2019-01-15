@@ -12,7 +12,7 @@ import com.test.productmgmt.pojo.ProductDetails;
 import com.test.productmgmt.service.ProductService;
 
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProductController {
 
 	@Autowired
