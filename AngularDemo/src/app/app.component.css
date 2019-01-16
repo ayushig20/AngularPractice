@@ -1,17 +1,12 @@
-/* .tableView {
-    text-decoration-color: maroon;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    border : 10 px;
-}
 table {
     width: 100%;
   }
-  th {
-    height: 50px;
-    font-size: 20px
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
   }
-mat-card #cardView {
-    color: lightgray;
-    size: 100px;
-} */
+  
+  td, th {
+    width: 25%;
+  }
