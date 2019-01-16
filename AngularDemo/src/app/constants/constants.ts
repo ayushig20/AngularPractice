@@ -5,6 +5,7 @@ export class Constants{
     PRODUCT_SERVICES = {
         'GET_PRODUCTS_LIST' : 'service/productservice/getproducts',
         'GET_PRODUCT_DETAILS' : '/service/productservice/getproducts/',
-        'ADD_PRODUCT' : '/service/productservice/addproduct' 
+        'ADD_PRODUCT' : '/service/productservice/addproduct',
+        'DELETE_PRODUCT' : '/service/productservice/deleteproducts/'
     }
 }

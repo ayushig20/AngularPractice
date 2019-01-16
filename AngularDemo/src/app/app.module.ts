@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ApiServices } from './http/api.services';
 import { Constants } from './constants/constants';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatToolbarModule, MatDialogModule, MatButtonModule,MatTableModule } from '@angular/material';
+import { MatCardModule, MatToolbarModule, MatDialogModule, MatButtonModule,MatSortModule, MatTableModule , MatFormFieldModule, MatInputModule} from '@angular/material';
 import { AddProductDialogComponent } from './add-product-dialog/add-product-dialog.component';
 
 @NgModule({
@@ -23,9 +23,12 @@ import { AddProductDialogComponent } from './add-product-dialog/add-product-dial
     MatDialogModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  exports:[MatTableModule],
+  exports:[MatTableModule,MatSortModule,MatFormFieldModule,MatInputModule],
   providers: [ApiServices, Constants],
   bootstrap: [AppComponent],
   entryComponents: [AddProductDialogComponent]

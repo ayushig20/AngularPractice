@@ -30,4 +30,14 @@ export class ApiServices {
                 },
                 (err: any) => { return err; });
     }
+    
+    DeleteData(url: string): any {
+        return this.http.delete(this.protocol + this.host + this.port + url, { headers: this.head })
+            .pipe(
+                (response: any) => {
+                    console.log(response);
+                    return response;
+                },
+                (err: any) => { return err; });
+    }
 }
