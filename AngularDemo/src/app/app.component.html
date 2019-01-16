@@ -16,20 +16,19 @@
     </ul>
   </div>
 </nav>
-<div style="flex:100%">
-  <div style="flex:70%">
-    <mat-form-field>
-      <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
-    </mat-form-field>
-  </div>
-  <div style="flex:30%">
-    <span>Category:
-      <select class='select-option' required [(ngModel)]='typeOptionSelected' (ngModelChange)='onTypeOptionSelected($event)'>
-        <option class='option' *ngFor='let typeOption of typeOptions' [value]="typeOption">{{typeOption}}</option>
-      </select>
-    </span>
-  </div>
+<div layout="row">
+  <mat-form-field style="margin:10px">
+    <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
 
+  <span>Category:
+    <select class='select-option' layout="column" required [(ngModel)]='typeOptionSelected' (ngModelChange)='onTypeOptionSelected($event)'>
+      <option class='option' *ngFor='let typeOption of typeOptions' [value]="typeOption">{{typeOption}}</option>
+    </select>
+  </span>
+
+  <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 50, 100]">
+  </mat-paginator>
 
   <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource" matSort>
@@ -73,5 +72,7 @@
       </tr>
     </table>
   </div>
-  <button style="margin-left:100px" md-raised-button (click)="openAddProductDialog()">Add Product</button>
+  <div style="margin-left:600px;padding-top:10px">
+    <button md-raised-button (click)="openAddProductDialog()">Add Product</button>
+  </div>
 </div>

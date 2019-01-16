@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 //Import class to be used
 import { ApiServices } from './http/api.services';
 import { Constants } from './constants/constants';
-import { MatDialog, MatSort, MatTableDataSource } from '@angular/material';
+import { MatDialog, MatSort, MatTableDataSource,MatPaginator } from '@angular/material';
 import { AddProductDialogComponent } from './add-product-dialog/add-product-dialog.component';
 
 export interface Product {
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   title = 'YourCart';
   typeOptionSelected: any;
   @ViewChild(MatSort) sort: MatSort;
-
+@ViewChild(MatPaginator) paginator : MatPaginator;
   constructor(private apiServices: ApiServices, private constants: Constants, public dialog: MatDialog) {
   }
 
@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
   public doFilter = (value: string) => {
     this.dataSource.filter = value.trim().toLocaleLowerCase();
   }
-  
+
   //Get all product details
   //For now, calling getproduct on type basis for all type seperately
   viewAllProductList(): any {
@@ -89,6 +89,7 @@ export class AppComponent implements OnInit {
           //Setting datasource from product list
           this.dataSource = new MatTableDataSource(productList);
           this.dataSource.sort = this.sort;
+          this.dataSource.paginator = this.paginator;
           console.log(this.dataSource);
         });
       });
@@ -111,6 +112,7 @@ export class AppComponent implements OnInit {
 
         this.dataSource = new MatTableDataSource(productList);
         this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
         console.log(this.dataSource);
       });
     }
