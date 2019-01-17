@@ -36,4 +36,9 @@ public class ProductController {
 		return productService.deleteProduct(productId);
 	}
 
+	@RequestMapping(value = "/productservice/getallproducts", method = RequestMethod.GET, produces = {
+			"application/json" })
+	public List<Product> getAllProducts(String productType) {
+		return productService.getAllProducts();
+	}
 }

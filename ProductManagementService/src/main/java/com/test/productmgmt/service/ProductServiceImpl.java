@@ -42,6 +42,11 @@ public class ProductServiceImpl implements ProductService {
 		return downloads;
 	}
 
+	@Override
+	public List<Product> getAllProducts() {
+		return productRepository.findAll();
+	}
+
 	@Transactional
 	@Override
 	public boolean deleteProduct(int productId) {

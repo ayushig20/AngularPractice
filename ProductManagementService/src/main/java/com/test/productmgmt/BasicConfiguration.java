@@ -50,7 +50,7 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
 
        http
                 .authorizeRequests()
-                .antMatchers("/productservice/getproducts/**")
+                .antMatchers("/productservice/getproducts/**","/productservice/getallproducts")
                 .hasRole("USER")
                 .antMatchers("/productservice/deleteproducts/**","/productservice/addproduct/**")
                 .hasRole("ADMIN")

@@ -9,4 +9,6 @@ public interface ProductService {
 	public void addProduct(ProductDetails productDetails);
 	public List<Product> searchProducts(String productType);
 	public boolean deleteProduct(int productId);
+	public List<Product> getAllProducts();
+
 }
