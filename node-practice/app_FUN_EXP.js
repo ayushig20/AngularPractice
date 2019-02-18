@@ -4,9 +4,9 @@ var hello = function(name){
 
 hello('ashish');
 
-function callFunction(fun){
-fun();
+function callFunction(fun,arg){
+fun(arg);
 };
 
 
-callFunction(hello);
+callFunction(hello,'ayushi');
