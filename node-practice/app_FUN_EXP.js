@@ -1,12 +1,12 @@
-var hello = function(name){
-    console.log('Hello '+ name);
+var hello = function (name) {
+    console.log('Hello ' + name);
 };
 
 hello('ashish');
 
-function callFunction(fun,arg){
-fun(arg);
+function callFunction(fun, arg) {
+    fun(arg);
 };
 
 
-callFunction(hello,'ayushi');
+callFunction(hello, 'ayushi');

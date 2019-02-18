@@ -1,5 +1,5 @@
-var counter = function(arr){
-return 'The lenght of array is '+ arr.length;
+var counter = function (arr) {
+    return 'The lenght of array is ' + arr.length;
 };
 
 var counter1 = function(arg){
