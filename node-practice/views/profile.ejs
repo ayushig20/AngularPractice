@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background: skyblue; font-family: Verdana; color:#fff;padding: 30px;}
+            h1{font-size: 36px; text-transform: uppercase; letter-spacing: 2px; text-align: center}
+            h2{font-size: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: center}
+            p{font-size: 16px; text-align: center;}
+            ul{font-size: 16px; text-align: center;}
+            li{font-size: 16px; text-align: center;}
+        </style>
+    </head>
+    <body>
+        <% include partials/nav.ejs %>
+        <h1>Welcome to the world of JS </h1>
+        <h2>Profile Of <%= person%> </h2>
+        <p><strong>Age: </strong><%= data.age%></p>
+        <p><strong>Job: </strong><%= data.job%></p>
+        <p>Hobbies</p>
+        <ul>
+            <% data.hobbies.forEach(function(item){ %>
+                <li><%= item %></li>
+            <% }); %>
+        </ul>
+        <p>Enjoy the paty of developing a best application online</p>
+    </body>
+</html> 
