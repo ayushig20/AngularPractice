@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3bedc1e5-b2c0-46ee-ab06-a6b56ed0c787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DesignPatternPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignPatternPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DesignPatternPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DesignPatternPractice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-config-server/src/main/java/com/ashish/microsevices/springcloudconfigserver/SpringCloudConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-server/src/main/java/com/ashish/microsevices/springcloudconfigserver/SpringCloudConfigServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-exchange-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -308,6 +308,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23676248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
