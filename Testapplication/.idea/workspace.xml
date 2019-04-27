@@ -7,9 +7,19 @@
     <list default="true" id="3bedc1e5-b2c0-46ee-ab06-a6b56ed0c787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../currency-conversion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/ashish/microsevices/currencyconversionservice/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/ashish/microsevices/currencyconversionservice/CurrencyConversionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/ashish/microsevices/currencyconversionservice/CurrencyConversionServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/ashish/microsevices/currencyconversionservice/CurrencyConversionServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/ashish/microsevices/currencyconversionservice/CurrencyExchangeServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/ashish/microsevices/currencyconversionservice/CurrencyExchangeServiceProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-exchange-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-exchange-service/src/main/java/com/ashish/microsevices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-exchange-service/src/main/java/com/ashish/microsevices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-exchange-service/src/main/java/com/ashish/microsevices/currencyexchangeservice/controller/CurrencyExchangeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-exchange-service/src/main/java/com/ashish/microsevices/currencyexchangeservice/controller/CurrencyExchangeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netflix-eureka-naming-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netflix-eureka-naming-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netflix-eureka-naming-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../netflix-eureka-naming-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netflix-zuul-api-gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netflix-zuul-api-gateway-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netflix-zuul-api-gateway-server/src/main/java/com/ashish/microsevices/netflixzuulapigatewayserver/NetflixZuulApiGatewayServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../netflix-zuul-api-gateway-server/src/main/java/com/ashish/microsevices/netflixzuulapigatewayserver/NetflixZuulApiGatewayServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netflix-zuul-api-gateway-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../netflix-zuul-api-gateway-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -308,7 +318,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23676248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
