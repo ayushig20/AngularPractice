@@ -12,6 +12,11 @@
 
 ---
 
+### Any one can contribute.
+
+---
+
 ## License Copyright
 
 © Self
+
